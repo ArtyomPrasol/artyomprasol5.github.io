@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Прасол Задача 5</title>
+    <script>
+        function click1() {
+            var f1 = document.getElementById("price");
+            var f2 = document.getElementById("count");
+            var r = document.getElementById("button1");
+            r.innerHTML = f1 * f2;
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="price">Price: </label>
+        <input name="field1" id="price" type="number" />
+        <label for="count">Count: </label>
+        <input name="field2" id="count" type="number" />
+        <button id="button1" onclick="return click1()";">Buy</button>
+    </form>
+    <div id="result">...</div>
+</body>
+</html>
