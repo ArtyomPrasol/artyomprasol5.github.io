@@ -1,8 +1,8 @@
 function falseD() {
-    alert("Incorrect data");
+    alert("ERROR: Incorrect data");
 }
 function correct() {
-    alert("Correct data");
+    console.log("Correct data");
 }
 
 function click1() {
