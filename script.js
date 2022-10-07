@@ -6,15 +6,20 @@ function correct() {
 }
 
 function click1() {
-    var f1 = Number(document.getElementById("price").value);
-    var f2 = Number(document.getElementById("count").value);
-    if (f1 < 0 || f2 < 0) falseD();
-    else {
-        var r = document.getElementById("result");
-        r.innerHTML = "Price for all: " + f1 * f2;
+    var f1 = document.getElementById("price");
+    var f2 = document.getElementById("count");
+    var r = document.getElementById("result");
+    let result = f1.value * f2.value;
+    if (!Number.isNaN(result) && f1.value > 0 && f2.value > 0) 
+    {
+        r.value = result;
         correct();
+    } 
+    else 
+    {
+        r.value = "ERROR";
+        falseD();
     }
-    return false;
 }
 
 window.addEventListener('DOMContentLoaded', function (event) {
