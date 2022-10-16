@@ -12,7 +12,7 @@ function click1() {
     let result = f1.value * f2.value;
     if (!Number.isNaN(result) && f1.value > 0 && f2.value > 0) 
     {
-        r.value = result;
+        r.innerHTML = result;
         correct();
     } 
     else 
