@@ -16,10 +16,8 @@ function click1() {
         correct();
     } 
     else 
-    {
-        r.value = "ERROR";
         falseD();
-    }
+
 }
 
 window.addEventListener('DOMContentLoaded', function (event) {
